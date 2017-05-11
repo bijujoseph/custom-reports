@@ -1,0 +1,77 @@
+Status: FAILED
+Time Taken: 8
+Size: 131
+Timestamp: Wed May 10 22:32:30 EDT 2017
+TestStep: score
+
+----------------- Messages ------------------------------
+[quality_base] Assertion failed for path [data.score.parts[0].original.parts[0].value] : PathNotFoundException:Path 'data' not found in the current context:
+{"error": {
+   "type": "NotFoundError",
+   "message": "No submission found for id: e6fe2b47-65fc-4feb-af96-0d4b1fd09a6b"
+}}
+[quality_bonus] Assertion failed for path [data.score.parts[0].original.parts[1].value] : PathNotFoundException:Path 'data' not found in the current context:
+{"error": {
+   "type": "NotFoundError",
+   "message": "No submission found for id: e6fe2b47-65fc-4feb-af96-0d4b1fd09a6b"
+}}
+[msr_score] Assertion failed for path [data.score.parts[0].original.parts[0].parts[0].value] : PathNotFoundException:Path 'data' not found in the current context:
+{"error": {
+   "type": "NotFoundError",
+   "message": "No submission found for id: e6fe2b47-65fc-4feb-af96-0d4b1fd09a6b"
+}}
+[msr_detail] Assertion failed for path [data.score.parts[0].original.parts[0].parts[0].detail] : PathNotFoundException:Path 'data' not found in the current context:
+{"error": {
+   "type": "NotFoundError",
+   "message": "No submission found for id: e6fe2b47-65fc-4feb-af96-0d4b1fd09a6b"
+}}
+[final_score] Assertion failed for path [data.score.value] : PathNotFoundException:Path 'data' not found in the current context:
+{"error": {
+   "type": "NotFoundError",
+   "message": "No submission found for id: e6fe2b47-65fc-4feb-af96-0d4b1fd09a6b"
+}}
+[quality_score] Assertion failed for path [data.score.parts[0].original.value] : PathNotFoundException:Path 'data' not found in the current context:
+{"error": {
+   "type": "NotFoundError",
+   "message": "No submission found for id: e6fe2b47-65fc-4feb-af96-0d4b1fd09a6b"
+}}
+
+----------------- Properties ------------------------------
+StatusCode: 404
+Method: GET
+HTTP Version: HTTP/1.1
+Endpoint: http://localhost:3000
+URL: http://localhost:3000/v1/submissions/e6fe2b47-65fc-4feb-af96-0d4b1fd09a6b/score
+
+---------------- Request ---------------------------
+Host: [localhost:3000]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+
+GET http://localhost:3000/v1/submissions/e6fe2b47-65fc-4feb-af96-0d4b1fd09a6b/score HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: localhost:3000
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+ETag: [W/"83-Qdod6nWudn5no+eVxhrwKg"]
+Access-Control-Allow-Headers: [Content-Type, X-Requested-With, Authorization]
+Date: [Thu, 11 May 2017 02:32:29 GMT]
+Vary: [Accept]
+Access-Control-Allow-Origin: [*]
+#status#: [HTTP/1.1 404 Not Found]
+Content-Length: [131]
+Access-Control-Allow-Methods: [PUT, PATCH, GET, POST, DELETE, OPTIONS]
+Connection: [keep-alive]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [Express]
+
+{
+  "error": {
+    "type": "NotFoundError",
+    "message": "No submission found for id: e6fe2b47-65fc-4feb-af96-0d4b1fd09a6b"
+  }
+}

@@ -1,0 +1,25 @@
+Status: FAILED
+Time Taken: 15
+Size: 0
+Timestamp: Wed May 10 22:32:29 EDT 2017
+TestStep: get_id
+Error:com.eviware.soapui.impl.wsdl.teststeps.PropertyTransferException: Path 'data' not found in the current context:
+{"error": {
+   "type": "DuplicateEntryError",
+   "message": "Category/SubmissionMethod quality/electronicHealthRecord already exists for this taxpayerIdentificationNumber/nationalProviderIdentifier/performanceYear"
+}}
+
+----------------- Messages ------------------------------
+Error performing transfer [Id] - Path 'data' not found in the current context:
+{"error": {
+   "type": "DuplicateEntryError",
+   "message": "Category/SubmissionMethod quality/electronicHealthRecord already exists for this taxpayerIdentificationNumber/nationalProviderIdentifier/performanceYear"
+}}
+----------------------------------------------------
+Id transferred [[Path 'data' not found in the current context:
+{"error": {
+   "type": "DuplicateEntryError",
+   "message": "Category/SubmissionMethod quality/electronicHealthRecord already exists for this taxpayerIdentificationNumber/nationalProviderIdentifier/performanceYear"
+}}]] from [post.Response] to [score.id]
+------------ source path -------------
+$data.submission.id
